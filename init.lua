@@ -21,3 +21,12 @@ require("config.lazy")
 
 -- Making "catppuccin" the default colorscheme
 vim.cmd.colorscheme "catppuccin"
+
+-- Making the color of indentscope
+require("mini.indentscope").setup({
+  symbol = "│",
+  options = { try_as_border = true },
+})
+
+vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", { fg = "#81F499" }) -- change color here
+
