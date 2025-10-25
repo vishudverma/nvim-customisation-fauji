@@ -22,6 +22,9 @@ require("config.lazy")
 -- Making "catppuccin" the default colorscheme
 vim.cmd.colorscheme "catppuccin"
 
+-- Making the DAP for python
+require("dap-python").setup("uv")
+
 -- Making the color of indentscope
 require("mini.indentscope").setup({
   symbol = "│",
