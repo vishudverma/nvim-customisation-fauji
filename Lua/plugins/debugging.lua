@@ -15,7 +15,7 @@ return {
 
 		-- Setup Python debugger adapter (CRITICAL - you were missing this)
 		-- Option 1: Use system Python (if debugpy is installed globally)
-		dap_python.setup("uv")
+		dap_python.setup("python")
 		for _, config in pairs(dap.configurations.python) do
 			config.pythonArgs = { "-Xfrozen_modules=off" }
 		end
