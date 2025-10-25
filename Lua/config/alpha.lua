@@ -17,7 +17,7 @@ do
 	}
 	-- Set menu
 	dashboard.section.buttons.val = {
-		dashboard.button("e", "📄 > New file", ":ene<AR> startinsert <CR>"),
+		dashboard.button("e", "📄 > New file", ":tabnew<CR>"),
 		dashboard.button("f", "🔎 > Find file", ":Telescope find_files<CR>"),
 		dashboard.button("r", "📑 > Recent", ":Telescope oldfiles<CR>"),
 		dashboard.button("l", "💤 > Lazy", ":Lazy<CR>"),
